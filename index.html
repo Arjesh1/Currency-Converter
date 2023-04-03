@@ -19,20 +19,18 @@
             <h1 class="text-warning mb-5">Currency Converter <span><i class="fa-solid fa-money-bill-wave"></i></span></h1>
             <div class="input-group mb-3">
                 <span class="input-group-text bg-success text-light " id="basic-addon1">Enter Amount $</span>
-                <input type="number" class="form-control" placeholder="Amount" aria-label="Amount" aria-describedby="basic-addon1">
+                <input type="number" class="form-control" placeholder="Amount"  id="inputAmt" onchange="amtTyping()"
+                aria-label="Amount" aria-describedby="basic-addon1">
               </div>
 
               <div class="convertor d-flex justify-content-around align-items-center gap-3">
 
                 <div class="dropdown">
                     <h5 class="text-center text-light">From</h5>
-                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Currency
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li class="currency">Action</li>
-                    </ul>
-                    <span class="input-group-text mt-4" id="basic-addon3">Currency</span>
+                    <select name="currency bg-light" class="currency"> </select>
+                    
+                   
+                    <span class="input-group-text mt-4" id="basic-addon3 fromCurrency">Currency</span>
                   </div>
 
                   <div class="exchange mt-4 text-warning">
@@ -41,14 +39,9 @@
 
                   <div class="dropdown">
                     <h5 class="text-center text-light">To</h5>
-                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Currency
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li class="currency">Action</li>
-                      
-                      
-                    </ul>
+                    <select name="currency bg-light" class="currency"> </select>
+                    
+                   
                     <span class="input-group-text mt-4" id="basic-addon3">Currency</span>
                   </div>
 
@@ -56,7 +49,7 @@
               
 
               <div class="submit mt-5 d-flex justify-content-center">
-                <button type="button" class="btn btn-success  "><span class="textdot">.............................................</span>Convert<span class="textdot">.............................................</span></button>
+                <button type="button" class="btn btn-success border-light  "><span class="textdot">.............................................</span>Convert<span class="textdot">.............................................</span></button>
             </div>
 
             
