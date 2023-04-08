@@ -17,13 +17,22 @@
         <div class="content bg-info p-5">
 
             <h1 class="text-warning mb-5">Currency Converter <span><i class="fa-solid fa-money-bill-wave"></i></span></h1>
+           
+            <form action="" id="form" onsubmit="{handleOnSubmit}" >
             <div class="input-group mb-3">
                 <span class="input-group-text bg-success text-light " id="basic-addon1 num">Enter Amount $</span>
-                <input type="number" class="form-control" placeholder="Amount"  id="inputAmt" "
+
+                <input type="number" class="form-control" placeholder="Amount"  id="inputAmt" 
                 aria-label="Amount" aria-describedby="basic-addon1">
               </div>
 
-              <div class="convertor d-flex justify-content-around align-items-center gap-3">
+              <div class="submit mt-5 d-flex justify-content-center">
+                <button type="button" class="btn btn-success border-light  "><span class="textdot">.............................................</span>Convert<span class="textdot">.............................................</span></button>
+            </div>
+
+          </form>
+
+              <div class="convertor d-flex justify-content-around mt-4 align-items-center gap-3">
 
                 <div class="dropdown">
                     <h5 class="text-center text-light">From</h5>
@@ -48,9 +57,7 @@
               </div>
               
 
-              <div class="submit mt-5 d-flex justify-content-center">
-                <button type="button" class="btn btn-success border-light  "><span class="textdot">.............................................</span>Convert<span class="textdot">.............................................</span></button>
-            </div>
+              
 
             
 
