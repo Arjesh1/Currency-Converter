@@ -22,12 +22,12 @@
             <div class="input-group mb-3">
                 <span class="input-group-text bg-success text-light " id="basic-addon1 num">Enter Amount $</span>
 
-                <input type="number" class="form-control" placeholder="Amount"  id="inputAmt" 
+                <input type="number" class="form-control" placeholder="Amount"  id="inputForm" 
                 aria-label="Amount" aria-describedby="basic-addon1">
               </div>
 
               <div class="submit mt-5 d-flex justify-content-center">
-                <button type="button" class="btn btn-success border-light  "><span class="textdot">.............................................</span>Convert<span class="textdot">.............................................</span></button>
+                <button type="button" class="btn btn-success border-light " id="submit"><span class="textdot">.............................................</span>Convert<span class="textdot">.............................................</span></button>
             </div>
 
           
@@ -36,7 +36,7 @@
 
                 <div class="dropdown">
                     <h5 class="text-center text-light">From</h5>
-                    <select name="currency bg-light" class="currency">
+                    <select name="currency bg-light" class="currency" id="fromCurrency">
                       <option value="">Select Currency</option>
                       <option value="USD">USD</option>
                       <option value="AED">AED</option>
@@ -93,7 +93,7 @@
                     </select>
                     
                    
-                    <span class="input-group-text mt-4" id="basic-addon3 fromCurrency">Currency</span>
+                    <span class="input-group-text mt-4" id="basic-addon3 ">Currency</span>
                   </div>
 
                   <div class="exchange mt-4 text-warning">
@@ -102,7 +102,7 @@
 
                   <div class="dropdown">
                     <h5 class="text-center text-light">To</h5>
-                    <select name="currency bg-light" class="currency" id="ans">
+                    <select name="currency bg-light" class="currency" id="toCurrency">
                       <option value="">Select Currency</option>
                       <option value="USD">USD</option>
                       <option value="AED">AED</option>
@@ -159,11 +159,14 @@
                     </select>
                     
                    
-                    <span class="input-group-text mt-4" id="basic-addon3">Currency</span>
+                    <span class="input-group-text mt-4" id="basic-addon3 toValue">Currency</span>
                   </div>
 
               </div>
               
+              <div class="submit mt-5 d-flex justify-content-center">
+                <button type="button" class="btn btn-warning border-light  "><span class="textdot">.............................................</span>Reset<span class="textdot">.............................................</span></button>
+            </div>
 
               
 
