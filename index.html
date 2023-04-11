@@ -12,6 +12,7 @@
     <title>Currency Converter</title>
 </head>
 <body>
+  <div class="container">
     
     <div class="wrapper d-flex justify-content-center  align-items-center ">
         <div class="content bg-info p-5">
@@ -37,7 +38,7 @@
                 <div class="dropdown">
                     <h5 class="text-center text-light">From</h5>
                     <select name="currency bg-light" class="currency" id="fromCurrency">
-                      <option value="">Select Currency</option>
+                      <option value="S">Select Currency</option>
                       <option value="USD">USD</option>
                       <option value="AED">AED</option>
                       <option value="ARS">ARS</option>
@@ -93,7 +94,7 @@
                     </select>
                     
                    
-                    <span class="input-group-text mt-4" id="basic-addon3 ">Currency</span>
+                    <span class="input-group-text mt-4 bg-success text-center text-light" id="displayCurrency">Currency</span>
                   </div>
 
                   <div class="exchange mt-4 text-warning">
@@ -103,7 +104,7 @@
                   <div class="dropdown">
                     <h5 class="text-center text-light">To</h5>
                     <select name="currency bg-light" class="currency" id="toCurrency">
-                      <option value="">Select Currency</option>
+                      <option value="T">Select Currency</option>
                       <option value="USD">USD</option>
                       <option value="AED">AED</option>
                       <option value="ARS">ARS</option>
@@ -159,14 +160,12 @@
                     </select>
                     
                    
-                    <span class="input-group-text mt-4" id="basic-addon3 toValue">Currency</span>
+                    <span class="input-group-text mt-4 bg-success text-center text-light" id="toValue">Currency</span>
                   </div>
 
               </div>
               
-              <div class="submit mt-5 d-flex justify-content-center">
-                <button type="button" class="btn btn-warning border-light  "><span class="textdot">.............................................</span>Reset<span class="textdot">.............................................</span></button>
-            </div>
+            
 
               
 
@@ -178,6 +177,8 @@
       </div>
 
     </div>
+
+  </div>
     
 
     <script src="script.js"></script>
