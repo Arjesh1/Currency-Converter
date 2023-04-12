@@ -7,8 +7,8 @@ let inputForm = document.getElementById("inputForm")
 let convert = document.getElementById("submit")
 let reset = document.getElementById('reset')
 var finalValue = document.getElementById("toValue");
-var resultFrom;
-var resultTo;
+var resultFrom = "";
+var resultTo= "";
 var inputAmt;
 
 
@@ -49,7 +49,7 @@ function displayResults(currency) {
 
     if (resultFrom === resultTo){
         alert ("Please select different currencies")
-    }else if(resultFrom === "S" || resultTo === "T"){
+    }else if(resultFrom === "" || resultTo === ""){
         alert ("Please select a currency")
     } else{
     let fromRate = currency.rates[resultFrom];
