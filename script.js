@@ -49,7 +49,7 @@ function displayResults(currency) {
 
     if (resultFrom === resultTo){
         alert ("Please select different currencies")
-    }else if(resultFrom === "S" && resultTo === "T"){
+    }else if(!(resultFrom === "S" && resultTo === "T")){
         alert ("Please select a currency")
     } else{
     let fromRate = currency.rates[resultFrom];
